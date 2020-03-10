@@ -1,167 +1,170 @@
-# Aplicación financiera
+# Aplicación financiera : Banqui
 
-## Preámbulo
+## Índice
+ 
+* [1. El proyecto](#1-el-proyecto)
+* [2. Objetivos iniciales del proyecto](#2-objetivos-iniciales-del-proyecto)
+* [3. Implementación](#3-implementación)
+* [4. Descubrimiento e investigación](#4-descubrimiento-e-investigación)
+* [5. Síntesis](#5-síntesis)
+* [6. Definición de la solución](#6-definición-de-la-solución)
+* [7. Ideación ](#7-ideación)
+* [8. Prototipado](#9-prototipado)
+* [9. Recomendaciones de próximos pasos para el banco con respecto a la app](#10-recomendaciones-de-próximos-pasos-para-el-banco-con-respecto-a-la-app)
+* [10. Links](#10-Links)
 
-El banco más importante del país, siguiendo las tendencias de otros países, está
+***
+
+## 1. El proyecto
+
+El banco Pichincha, siguiendo las tendencias de otros países, está
 planeando lanzar un banco 100% digital bajo otro nombre: "Banqui". Su principal
 objetivo es tener un banco que sea más cercano a las necesidades del público más
 joven del país. Para ello han venido piloteando un app con un número pequeño de
 usuarios. Los resultados de este piloto son mixtos, hay algunas cosas que han
 sido bien recibidas por los usuarios, y hay otras que se tienen que mejorar aún.
 
-Para poder ayudarlos a entender mejor las necesidades de sus clientes y crear
-el mejor banco digital del país han decidido contratar a una consultora de UX,
-donde le han asignado este proyecto a ti y otra compañera de Laboratoria.
+## 2. Objetivos iniciales del proyecto
 
-## Introducción
+- Analizar la data que nos fue brindada.
+- Testear el prototipo inicial e identificar los puntos de dolor.
+- Rediseñar la aplicación con los hallazgos de la investigación.
 
-### Contexto
+## 3. Implementación 
 
-Durante la primera semana de entendimiento de los requerimientos, el Product
-Manager les comparte las hipótesis y preguntas que tienen dentro del equipo:
+Para iniciar el proyecto se definieron las actividades y herramientas que se utilizarían:
+![Tabla de implementación](https://github.com/Les9616/lim011-ux-financial-app/blob/master/entregables.JPG)
 
-> Los usuarios que anteriormente han sido clientes de algún banco, nos comparan
-  con las aplicaciones de esos bancos, parece que hay cosas que extrañan.
+## 4. Descubrimiento e investigación
+###   Entendimiento del problema, industria y contexto
 
-> La aplicación que estamos probando es para iOS, sin embargo, para hacer un
-  lanzamiento nacional necesitamos crear un app para Android.
+Según Asbanc, al cierre del 2018 en el Perú, se realizaron 1,187 millones
+de transacciones monetarias, cifra superior en 16.98% respecto al 2017. 
+Según canal de atención, la banca móvil, internet del comercio (e-commerce) y la banca
+por internet han sido los canales con mejor desempeño en el periodo señalado.
 
-> Nos falta acercarnos un poco más a los usuarios jóvenes, 100% digitales, los
-  que usan Netflix, Uber, Spotify, Instagram, entre otros.
+![Asbanc](https://github.com/Les9616/lim011-ux-financial-app/blob/master/asbanc.JPG)
 
-### Recursos
+Según un reporte de Deloitte, la tecnología móvil ofrece una oportunidad
+de crecimiento sin precedentes para la banca en Latinoamérica, ya que a medida que 
+las economías de la región siguen prosperando, los consumidores,particularmente los 
+no bancarizados podrían generar una demanda de nuevos productos y servicios
+financieros. Otro factor que influye positivamente en este escenario es que existe un 
+importante porcentaje de la población que tiene un teléfono celular, pero no
+cuentas bancarias. Precisamente por esta situación es que el canal móvil proporciona una 
+forma efectiva para hacerlos partícipes del mercado de los servicios financieros.
 
-En esta carpeta de [Google Drive](https://drive.google.com/drive/folders/1etdcDyoN7C038ti_i4RhavK2DWEAc1yH?usp=sharing) y en los siguientes
-links, encontrarán:
+###   Entrevista con el cliente
 
-- Los user personas
-- El user flow del MVP
-- El [diseño del app en Figma](https://www.figma.com/file/im1tb4vPyt9bMVlhzqlHIR/S02E01-App-Financiera?node-id=0%3A1)
-  , con una guía de componentes y el [Prototipo navegable](https://marvelapp.com/1hj56576/screen/60926857).
-- Analytics de los primeros 6 meses del MVP
-- Data de uso del MVP de los primeros 6 meses
+Durante la primera semana de entendimiento de los requerimientos, se realizó la entrevista 
+al cliente y se determinaron los siguientes objetivos:
 
-## Objetivos de aprendizaje
+- Que el usuario se sienta en comodidad de poder acceder a todas las funciones del banco sin
+  tener que acercarse a una agencia.
+- Validar si la aplicación es lo que esperaba el usuario. 
+- Confirmar que funcionalidades prefieren.
+- Que el cliente aún conserve esa cercanía con la banca presencial.
+- Identificar el Look and feel del producto.
 
-El objetivo principal de este proyecto es que te enfrentes al reto de rediseñar
-un producto ya existente. Es muy probable que termines trabajando en productos
-existentes y que para tener un buen entendimiento del problema, debas analizar
-data de ese producto y complementar esta data con investigación de campo. Para
-luego definir una estrategia de producto de acuerdo a los objetivos del negocio,
-pero sin dejar de lado los objetivos y necesidades de los usuarios. Puedes leer
-sobre el trabajo de un UX Designer en rediseño este [blogpost](https://blog.continuum.cl/preguntas-para-dejar-de-ser-ux-designer-y-empezar-a-ser-un-ux-redesigner-143e5467ec8d).
+###   Entrevista con usuarios
 
-En este proyecto pondrás en práctica habilidades de: análisis de datos,
-investigación de campo, pensamiento crítico, cuestionamiento, síntesis, diseño
-de componentes de la interfaz y user testing.
+Se realizaron 5 entrevistas con usuarios y estos fueron los princippales hallazgos:
 
-## Consideraciones generales
+- Los usuarios buscan seguridad tanto en la aplicación como en el banco al que se afilien.
+- Los usuarios se muestran dispuestos a probar nuevas alternativas de servicios financieros
+  que les brinden confianza o que sean respalddos por entidades conocidas.
+- Los usuarios quieren servicios que les eviten dirigirse a los bancos porque disponen de 
+  muy poco tiempo y/o les genera molestia.
+- Los usuarios buscan realizar la mayor cantidad de acciones a través de sus aplicaciones 
+  bancarias, es por ello que la app debe ser muy intuitiva y clara.
+  
+### Análisis de la data
 
-Como ya habrás notado, gran parte del trabajo de UX tiene relación con el
-desempeño de tus habilidades blandas. Estas habilidades nos acompañan a lo largo
-de cualquier proyecto y su desarrollo es clave para el éxito. Estas habilidades
-no sólo son utilizadas a la hora de entender al usuario, sino a lo largo de toda
-la ejecución, es decir desde cómo planificamos hasta nuestra presentación al
-cliente.
+De acuerdo a la data de uso del MVP de los primeros 6 meses, estos son los principales hallazgos:
 
-Anteriormente, nos habíamos concentrado en el desarrollo de tu curiosidad y
-empatía, practicado cómo relacionarte con el cliente y el usuario. Siempre debes
-pensar quiénes son y qué necesitan, y no enfocarte en lo que tú consideras que
-podría ser la solución correcta. Se trata de entender que nosotros no somos el
-usuario, y debemos hacer el ejercicio empático de comprenderlo a él y a nuestro
-cliente.
+- El número de instalaciones creció en los últimos  meses.
+- El uso activo va aumentando progresivamente, esto se debe también al aumento de instalaciones 
+  de la aplicación.
+- La cantidad de dispositivos activos aumenta cada inicio, quincena o fin de mes.
+- El número de sesiones es mayor que los dispositivos activos lo que indicaría que los usuarios 
+  ingresan a la app más de una vez.
+  
+ ![Data](https://github.com/Les9616/lim011-ux-financial-app/blob/master/data.JPG)
 
-Este proyecto, a diferencia de otros, no debes partir desde cero generando un
-prototipo, sino investigar lo que el banco ya ha construido y en base a eso
-hacer una propuesta. Para esto, te aconsejamos comenzar por investigar
-la información que tienes; entender qué datos ya manejas y qué elementos
-necesitas averiguar para completar tu proyecto. De esta manera, tu planificación
-es muy relevante para comprender la problemática.
+## 5. Síntesis
 
-Al planificar podrás comprender de qué manera estructurar tu proyecto y qué
-elementos debes investigar. Además, te permitirá trabajar de mejor manera con tu
-compañera, te aconsejamos que consideres tiempo para poder iterar sobre las
-posibilidades de mejora y también para preparar la presentación.
+Se realizaron 17 testeos del prototipo actual con Maze.
 
-La calidad del proyecto depende totalmente de tu proactividad y autoaprendizaje,
-si no conoces plataformas financieras parte por investigar sobre ellas. No
-esperes que los contenidos lleguen a ti, más bien busca todo lo que necesites
-para poder encontrar la mejor solución.
+ ![Misiones](https://github.com/Les9616/lim011-ux-financial-app/blob/master/misiones.JPG)
+ 
+### Affinity map
 
-Parte importante de tu trabajo como UX designer es tomar decisiones.
-Efectivamente existen múltiples herramientas que puedes utilizar, debes
-comprender para qué y con qué finalidad escoges usar cada una de ellas. Siempre
-piensa que debes justificar todo gasto con tu consultora y el cliente, cada
-decisión que tomes en el proyecto debe ser fundamentada, no sigas pasos
-mecánicos por seguirlos, cuestiónate constantemente.
+Se realizó la sintesís de las entrevistas y testeos a través de Miró.
 
-Por último, considera que la calidad de tu presentación es tan importante como
-el proceso completo. Un proyecto que no se aprecia al ser presentado no es un
-buen proyecto. Si vas a utilizar una slides frente a un cliente, se prolija en
-el diseño de ellos y en la información que entregas, también busca la mejor
-manera de mostrar tu demo y por sobre todo prueba antes de presentar frente al
-cliente.
+![AM User Persona](https://github.com/Les9616/lim011-ux-financial-app/blob/master/AM%20User%20Persona.PNG)
 
-## Entrega
+![AM Banco](https://github.com/Les9616/lim011-ux-financial-app/blob/master/AM%20Banco.PNG)
 
-El proyecto será entregado en un repositorio de GitHub. En él deberás agregar
-lo siguiente:
+![AM Banqui](https://github.com/Les9616/lim011-ux-financial-app/blob/master/AM%20Banqui.PNG)
 
-README.md  detallando:
+### User Persona
 
-* Objetivos iniciales del proyecto
-* Problemas encontrados tanto a nivel de negocio como a nivel de usuario
-* Recomendaciones de próximos pasos para el banco con respecto al app
-* De acuerdo al punto anterior, de requerirse cambios y desarrollos nuevos,
-  estos deberán ser diseñados y entregados en un prototipo de alta definición.
+![User Persona](https://github.com/Les9616/lim011-ux-financial-app/blob/master/user%20persona.jpg)
 
-Un video en Loom de máximo 5 minutos explicando tu documento.
-* Estos 5 minutos tienes que utilizarlos para explicar los puntos indicados en
-  el `README.md` y para hacer un demo de la solución propuesta.
+### Costumer Journey Map
 
-En las otras carpetas del repositorio o en las carpetas de Google Drive podrás
-agregar los documentos complementarios que sustenten tu proceso.
+![CJM Banqui](https://github.com/Les9616/lim011-ux-financial-app/blob/master/CJM-Banqui.PNG)
 
-### Hacker edition
+## 6. Definición de la solución
 
-Para el hacker edition puedes elegir una o varias de estas opciones:
+### Problem Statements
 
-- Antes de empezar a desarrollar este proyecto, lista cuáles fueron tus
-  aprendizajes durante el proyecto 1 y en qué cosas te gustaría mejorar durante 
-  el proyecto 2. Al terminar el proyecto 2 vuelve a esta lista y chequea cómo te 
-  fue con esos retos, ¿los cumpliste? Muestrános esta lista y esta reflexión
-  en un documento adicional (en el formato que prefieras).
-- En lugar de usar Github para documentar tu proceso de trabajo, documéntalo en
-  su propia web, puedes usar Wix, Instapage, Squarespace, Google Sites o crear
-  tu propia web desde 0. 
-- Escribe un post en Medium contando tu proceso de investigación.
+- Maria necesita tener la certeza de que la app y las operaciones que realiza con ella 
+  son seguras para querer utilizarlo.
+- Maria necesita poder realizar varias operaciones que se hacen en su banco pero desde 
+  su aplicacion de banca movil para querer utilizar la app.
+- Maria necesita ahorrar para sus estudios y educación de sus hijos.
+- Maria necesita ver el detalle de sus gastos para verificar sus movimientos.
+- Maria necesita encontrar sus operaciones mas recurrentes porque no dispone de tiempo.
 
-## Otras consideraciones
+### How Might We?
 
-### 1) Planeamiento y presupuesto
+- HMW darle seguridad a la aplicacion?
+- HMW darle seguridad a las operaciones que se realizan en la app?
+- HMW facilitar la ubicación de las operaciones dentro de la app?
+- HMW mostrar las operaciones mas recurrentes del usuario en la vista principal?
+- HMW ver el detalle de los gastos?
+- HMW verificar los movimientos que realiza el usuario?
+- HMW crearle el habito del ahorro?
+- HMW hacer que ahorrar sea divertido?
 
-En el reto con emprendimientos te entregamos una lista de tareas que podías
-realizar y le asignamos un valor en puntos a cada tarea. Además, te dimos un
-presupuesto de 300 puntos para que los utilices en esas tareas. Para este reto,
-la lista de tareas, el valor en puntos de cada tarea y el presupuesto total
-de las actividades a realizar lo crearás tú y lo tendrás que sustentar con tu
-coach. Adicinalmente, deberás sustentar con tu coach qué entregables harás
-llegar al banco al final de tu investigación y por qué. El coach te aprobará
-estos entregables o te dará feedback para mejorarlos.
+### What if
 
-Cuando hagas tu presupuesto y pienses en los entregables recuerda que el tiempo
-de desarrollo de este proyecto es de dos semanas. También, recuerda qué partes
-te tomaron más tiempo en el desarrollo del proyecto 1 y los aprendizajes que
-tuviste al desarrollar el proyecto 1.
+- ¿Que tal si confirmaramos los pagos para que se vean las transacciones seguras?
+- ¿Que tal si mostraramos una opcion de operaciones recurrentes?
+- ¿Que tal si colocaramos el detalle de sus gastos de una forma mas entendible?
+- ¿Que tal si podemos mover los iconos del menú?
+- ¿Que tal si puedo hacer transferencias con el número de celular?
+- ¿Que tal si puedo ahorrar pequeños montos a plazo fijo?
 
-### 2) Prototipo de alta fidelidad
+## Ideación y prototipado
 
-Existen varias herramientas que puedes utilizar para crear diseñar el producto,
-en este caso el diseño viene en Figma y el prototipo en Marvel, así que puedes
-seguir usando esas herramientas. Sin embargo, eres libre de utilizar otras
-como Adobe XD e Invision. Para el prototipo intenta utilizar Marvel o Invision,
-ya que para el testing tendrás que usar una herramienta llamada
-[Maze](https://maze.design/) que funciona mejor con estas.
+Para la ideación utilizamos la herramienta Crazy8: 
 
-Recuerda que el diseño que trabajes debe seguir los fundamentos de diseño visual
-como: contraste, alineación, jerarquía, entre otros.
+![Crazy8](https://github.com/Les9616/lim011-ux-financial-app/blob/master/crazy8.jpeg) ![Crazy8s](https://github.com/Les9616/lim011-ux-financial-app/blob/master/crazy8s.jpeg)
+
+### Prototipo de alta fidelidad
+
+![Inicio](https://github.com/Les9616/lim011-ux-financial-app/blob/master/inicio.JPG)
+![Movimientos](https://github.com/Les9616/lim011-ux-financial-app/blob/master/movimientos.JPG)
+![Ahorro](https://github.com/Les9616/lim011-ux-financial-app/blob/master/ahorros.JPG)
+![Balance](https://github.com/Les9616/lim011-ux-financial-app/blob/master/balance.JPG)
+![Token](https://github.com/Les9616/lim011-ux-financial-app/blob/master/token.JPG)
+![Contacto](https://github.com/Les9616/lim011-ux-financial-app/blob/master/contacto.JPG)
+
+## 10. Links
+
+- Prototipo navegable [Figma]()
+
+- Carpeta compartida [Drive](https://drive.google.com/drive/folders/1IMn8oNwX12JsH-ibtmlFWmbQ2mOV25nB?usp=sharing).
+
