@@ -164,7 +164,7 @@ Para la ideación utilizamos la herramienta Crazy8:
 
 ## 10. Links
 
-- Prototipo navegable [Figma]()
+- Prototipo navegable [Figma](https://www.figma.com/proto/muWpukMWzmpbNDAfuDWcv8/Banqui?node-id=973%3A3452&scaling=contain)
 
 - Carpeta compartida [Drive](https://drive.google.com/drive/folders/1IMn8oNwX12JsH-ibtmlFWmbQ2mOV25nB?usp=sharing).
 
